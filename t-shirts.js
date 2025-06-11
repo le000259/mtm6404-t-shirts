@@ -105,7 +105,7 @@ const Tshirts = ({ data }) => {
   //using another const to destructure the data and for the purpose of updating the stock
   const [tshirtsList, setTshirtsList] = React.useState(data);
 
-  //decrease the stock after the click
+  //decrease the stock after the click, return new list with updated stock
   const countBuy = (index, amount) => {
     setTshirtsList(prevList => {
       const updated = [...prevList];
